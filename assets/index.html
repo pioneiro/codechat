@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+		<!-- Favicon Icon Set -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/icon-set/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/icon-set/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/icon-set/favicon-16x16.png">
+		<link rel="manifest" href="/icon-set/site.webmanifest">
+
+		<title>Code Chat</title>
+	</head>
+	<body class="bg-light">
+
+		<nav class="navbar navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">
+				<img src="/icon-set/favicon-32x32.png" class="d-inline-block align-top px-1" alt="" loading="lazy">
+				Code Chat
+			</a>
+		</nav>
+
+		<div class="container py-5">
+			<h1 class="display-4 text-center">>_ Code Chat</h1>
+			<form class="mt-5" action="/chat.html">
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input type="text" class="form-control" id="name" placeholder="Name" name="username" required>
+				</div>
+				<div class="form-group">
+					<label for="room">Room</label>
+					<select class="custom-select" id="room" name="room" required>
+						<option selected disabled value="">Select Room</option>
+						<option>JavaScript</option>
+						<option>Python</option>
+						<option>Java</option>
+						<option>C++</option>
+						<option>C#</option>
+					</select>
+				</div>
+				<div class="form-group mt-4">
+					<input type="submit" class="btn btn-dark btn-block" id="submit" value="Join Room">
+				</div>
+			</form>
+		</div>
+
+		<div class="jumbotron jumbotron-fluid m-0 p-0 bg-dark fixed-bottom">
+			<div class="container text-center text-light">
+				<p class="lead m-0">Developed by <strong>Soumyajit Das</strong></p>
+			</div>
+		</div>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	</body>
+</html>

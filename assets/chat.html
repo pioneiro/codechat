@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+		<!-- Favicon Icon Set -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/icon-set/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/icon-set/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/icon-set/favicon-16x16.png">
+		<link rel="manifest" href="/icon-set/site.webmanifest">
+
+		<title>Code Chat</title>
+	</head>
+	<body class="bg-light">
+
+		<nav class="navbar navbar-dark bg-dark">
+			<a class="navbar-brand" href="/">
+				<img src="/icon-set/favicon-32x32.png" class="d-inline-block align-top px-1" alt="" loading="lazy">
+				Code Chat
+			</a>
+		</nav>
+
+		<div class="container py-5">
+
+			<nav class="navbar navbar-expand navbar-dark bg-dark rounded-top">
+
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+				    	<a class="nav-link active disabled" id="roomName">RoomName</a>
+				    </li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							Active Users
+						</a>
+						<ul class="dropdown-menu" id="users" aria-labelledby="users">
+							<!-- Users -->
+						</ul>
+					</li>
+				</ul>
+				<a href="index.html" class=" nav-link btn btn-secondary py-1">Leave Room</a>
+
+			</nav>
+			<div class="container border border-dark py-4 rounded-bottom">
+				<div class="container messageBox">
+					<!-- incoming messages -->
+				</div>
+				<form id="messageForm">
+					<div class="form-row align-items-center">
+						<div class="col-10">
+							<input type="text" class="form-control mb-2" id="msg" placeholder="Enter Message" autocomplete="off" required>
+						</div>
+						<div class="col-2">
+							<button type="submit" class="btn btn-block btn-dark mb-2">></button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="jumbotron jumbotron-fluid m-0 p-0 bg-dark fixed-bottom">
+			<div class="container text-center text-light">
+				<p class="lead m-0">Developed by <strong>Soumyajit Das</strong></p>
+			</div>
+		</div>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+		<!-- Custom JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="./js/main.js"></script>
+	</body>
+</html>
